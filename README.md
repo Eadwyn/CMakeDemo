@@ -17,3 +17,32 @@
 |-- CMakeLists.txt        // cmake
 ```
 
+# how to
+
+## ubuntu环境下的编译
+
+```shell
+# 编译环境
+apt-get install -y build-essential
+
+# 编译
+cd build
+cmake ..
+make
+```
+
+将在以下路径创建相关文件
+
+```
+|-- core-sdk
+|   |-- libs
+|      |-- include
+|         |-- CoreSdk.h   // 开放API headers
+|      |-- libCoreSdk.a   // 静态库
+|      |-- libCoreSdk.so  // 动态库
+|-- core-sdk-demo
+|   |-- bin
+|      |-- CoreSdkDemo
+```
+
+# 
